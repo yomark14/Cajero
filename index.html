@@ -18,10 +18,11 @@
     
 </head>
 
-<body class="blue">
+<body class="caja">
     <h1> CAJERO AUTOMATICO RED ATM/ATH</h1>
     <main >
-        <div class="babyblue" >
+        <div class="caja2">
+        <div class="screenBlue" >
             
             <div id="cajaizquierda">
                 <h2>Bienvenido</h2> 
@@ -46,11 +47,15 @@
             </div>
 
             <div id="cajaderecha" class="item2">
-                <p>Por favor Digite su contraseña</p>
-                <h2 id="cont"></h2>
-                <input id="contrasena" type="text" placeholder="Digite su contraseña">
+                <div class="datos">
+                    <h2 id="cont"> </h2>
+                    <p>Por favor Digite su contraseña</p>
+                    
+                    <input name="contrasena" type="password" placeholder="   Ej:A1234" value="" size="8">
+                </div>
+                
                 <div class="gridbotones">          
-                    <button  class="plata" onclick="CapturarDatos('1')">1</button>
+                    <button type="button" class="plata" onclick="CapturarDatos('1')">1</button>
                     <button  class="plata" onclick="CapturarDatos('2')">2</button>
                     <button  class="plata" onclick="CapturarDatos('3')">3</button>
                     <button  class="plata" onclick="CapturarDatos('A')">A</button>
@@ -59,7 +64,7 @@
                     <button  class="plata" onclick="CapturarDatos('5')">5</button>
                     <button  class="plata" onclick="CapturarDatos('6')">6</button>
                     <button  class="plata" onclick="CapturarDatos('B')">B</button>
-                    <button  class="btn btn-warning" onclick="CapturarDatos('Cancelar')">CANCELAR</button>        
+                    <button  class="btn btn-warning" type="reset" onclick="CapturarDatos('Cancelar')">CANCELAR</button>        
                     <button  class="plata" onclick="CapturarDatos('7')">7</button>
                     <button  class="plata" onclick="CapturarDatos('8')">8</button>
                     <button  class="plata" onclick="CapturarDatos('9')">9</button>
@@ -74,13 +79,13 @@
                     <header>
                     <h2>Resultado</h2>        
                 </div> 
-            
+            </div>
     </main>
 
     <!--JAVASCRIPT-->
     <script src="js/index.js"></script>
 
 </body>
-<footer> <h2> Todos los derechos reservados. </h2></footer>
+<footer> <strong> created by Yeison Oviedo | Todos los derechos reservados. © </strong></footer>
 
 </html>
